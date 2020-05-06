@@ -1,0 +1,95 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+body{
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+    color: #a3a5ae;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    text-align: center;
+    margin-top: 3rem;
+}
+.header h2{
+    font-size: 2rem;
+    font-weight: 200;
+    color: #4c4e61;
+    margin: 2px;
+}
+.header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4c4e61;
+    margin-top: 10px;
+}
+.header p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.feature-wrapper{
+    display: grid;
+    grid-template-areas: 'left center right' ;
+    grid-template-columns: auto;
+    grid-template-rows: 2;
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.feature-card{
+    width: 300px;
+    height: 180px;
+    padding: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px -1px hsl(229, 6%, 66%);
+    text-align: left;
+    /* display: flex;
+    flex-direction: column; */
+}
+.feature-card:hover{
+    filter: brightness(60%);
+    transition: filter 300ms ease-in;
+    cursor: pointer;
+}
+.feature-card h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4c4e61;
+    margin: 2px;
+}
+.feature-card p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    line-height: 22px;
+    margin: 5px;
+}
+.feature-card img{
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.card-1{
+grid-area: left;
+margin-top: 100px;
+border-top: solid 3px  #45d3d3;
+}
+.card-2{
+grid-area: center;
+border-top: solid 3px  #ea5353;
+}
+.card-3{
+grid-area: center;
+grid-row: 2/2;
+margin-top: -100px;
+border-top: solid 3px  #549ef2
+;
+}
+.card-4{
+grid-area: right;
+margin-top: 100px;
+border-top: solid 3px  #fcaf4a;
+}
