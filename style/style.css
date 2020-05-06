@@ -14,7 +14,7 @@ body{
 }
 .header h2{
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 100;
     color: #4c4e61;
     margin: 2px;
 }
@@ -92,4 +92,36 @@ border-top: solid 3px  #549ef2
 grid-area: right;
 margin-top: 100px;
 border-top: solid 3px  #fcaf4a;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media(max-width:1200px){
+    .header h2{
+        font-size: 1.4rem;
+    }
+    .header h1{
+        font-size: 1.4rem;
+    }
+    .header p{
+        font-size: 0.9rem;
+    }
+    .feature-wrapper{
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 60px;
+    }
+     .card-1, .card-2, .card-3, .card-4{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
 }
